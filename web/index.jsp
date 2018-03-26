@@ -27,7 +27,7 @@
     <body style="background-color:#000647;">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="index.jsp" style="color:#fff200">BUKMACHER</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,8 +74,7 @@
         <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
+                
             </ul>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -85,20 +84,7 @@
                         <p>Odbierz bonus przy pierwszej rejestracji!</p>
                     </div>   
                 </div>
-                <div class="carousel-item">
-                    <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3>Chicago</h3>
-                        <p>Thank you, Chicago!</p>
-                    </div>   
-                </div>
-                <div class="carousel-item">
-                    <img src="ny.jpg" alt="New York" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3>New York</h3>
-                        <p>We love the Big Apple!</p>
-                    </div>   
-                </div>
+                
             </div>
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -110,7 +96,7 @@
 
 
         <!-- Page Content -->
-        <div class="container">
+        <div class="w-90 p-2" >
 
             <div class="row">
 
@@ -148,7 +134,7 @@
                 </div>
                 <!-- /.col-lg-3 -->
 
-                <div class="col-lg-9">
+                <div class="col-lg-9 p-5">
                     <h3 style="color:#fff200; font-weight:bold" >STRONA STARTOWA</h3>
 
                     <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
