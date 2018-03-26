@@ -8,29 +8,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
         <title>BUKMACHER</title>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- <link href="css/bootstrap.min_1.css" rel="stylesheet">
-             <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-             <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.css"> 
-              <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.theme.min.css">
-        -->
-        <link href="css/slider.css" rel="stylesheet">
-
-
-        <!-- Custom styles for this template -->
-        <link href="css/shop-item.css" rel="stylesheet">
-        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+        <style>
+            /* Make the image fully responsive */
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
 
     </head>
 
@@ -70,7 +60,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="rejestracja.jsp" style="color:#fff200">REJESTRACJA</a>
                         </li>
-                        
+
 
                     </ul>
                 </div>
@@ -79,47 +69,44 @@
 
 
         <!-- Carousel ================================================== -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="first-slide"  src="https://i.imgur.com/UHR9CdL.png" alt="First slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1 style="font-weight: bold">BANER 1</h1>
-                            <p>opis</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button" style="background-color: #fff200; color:#343a40; border-color:#fff200">SPRAWDŹ</a></p>
-                        </div>
-                    </div>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.imgur.com/UHR9CdL.png" alt="Los Angeles" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>BONUS</h3>
+                        <p>Odbierz bonus przy pierwszej rejestracji!</p>
+                    </div>   
                 </div>
-
-                <!--
-                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                   <span class="sr-only">Previous</span>
-                 </a>
-                 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                   <span class="sr-only">Next</span>
-                 </a>
-               </div>
-            
-                <!-- /.carousel 
-               
-                -->  
+                <div class="carousel-item">
+                    <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>   
+                </div>
+                <div class="carousel-item">
+                    <img src="ny.jpg" alt="New York" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>   
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
-
-
-
-
-
-
-
 
 
         <!-- Page Content -->
@@ -138,26 +125,26 @@
                         <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">TENNIS</a>
                         <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SIATKÓWKA</a>
                         <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">BASEBALL</a>
-             
+
                     </div>
                     <br>
-                     <div class="list-group">
+                    <div class="list-group">
                         <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAGŁÓWEK 2</a>
                         <a href="pomoc.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">POMOC</a>
                         <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">REGULAMIN</a>
                         <a href="promocje.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PROMOCJE</a>
                         <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">STATYSTYKI</a>
-               </div>
+                    </div>
                     <br>
-                      <div class="list-group">
-                       <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAGŁÓWEK 3</a>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAGŁÓWEK 3</a>
                         <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SPRAWDŹ ZAKŁAD</a>
                         <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">WYNIKI</a>
-                      
+
                     </div>
-                    
-                    
-                    
+
+
+
                 </div>
                 <!-- /.col-lg-3 -->
 
@@ -168,39 +155,39 @@
                         <img class="card-img-top img-fluid" src="https://i.imgur.com/MffrAZy.jpg" alt="">
                         <div class="card-body">
                             <h3 class="card-title" style="font-weight: bold">ZAREJESTRUJ SIĘ I ODBIERZ BONUS!</h3>
-                            
+
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
-                             <a href="rejestracja.jsp" class="btn btn-success" >REJESTRACJA</a>
+                            <a href="rejestracja.jsp" class="btn btn-success" >REJESTRACJA</a>
                         </div>
                     </div>
                     <!-- /.card -->
 
-                 <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
                         <img class="card-img-top img-fluid" src="https://i.imgur.com/UHR9CdL.png" alt="">
                         <div class="card-body">
                             <h3 class="card-title" style="font-weight: bold">TYTUŁ</h3>
-                            
+
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
-                             <a href="#" class="btn btn-success" >WIĘCEJ</a>
+                            <a href="#" class="btn btn-success" >WIĘCEJ</a>
                         </div>
                     </div>
-                      <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
                         <img class="card-img-top img-fluid" src="https://i.imgur.com/aUNhrzI.jpg" alt="">
                         <div class="card-body">
                             <h3 class="card-title" style="font-weight: bold">TYTUŁ</h3>
-                            
+
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
-                             <a href="#" class="btn btn-success" >WIĘCEJ</a>
+                            <a href="#" class="btn btn-success" >WIĘCEJ</a>
                         </div>
                     </div>
-                    
-                     <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
                         <img class="card-img-top img-fluid" src="https://i.imgur.com/UHR9CdL.png" alt="">
                         <div class="card-body">
                             <h3 class="card-title" style="font-weight: bold">TYTUŁ</h3>
-                            
+
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
-                             <a href="#" class="btn btn-success" >WIĘCEJ</a>
+                            <a href="#" class="btn btn-success" >WIĘCEJ</a>
                         </div>
                     </div>
                     <!-- /.card -->
@@ -216,15 +203,15 @@
 
 
 
-<br><br>
+        <br><br>
 
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.4.0/holder.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- Footer -->
         <footer class="py-5 bg-dark">
             <div class="container">
