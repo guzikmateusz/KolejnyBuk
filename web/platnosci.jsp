@@ -10,7 +10,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>BUKMACHER</title>
+        <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+        <title>płatności</title>
+        <link rel="shortcut icon" href="https://i.imgur.com/7pcghN2.png"/>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -27,9 +29,9 @@
     <body style="background-color:#000647;">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="index.jsp" style="color:#fff200">BUKMACHER</a>
+                <a class="navbar-brand" href="index.jsp" style="color:#fff200; font-family: 'Audiowide'; font-size: 20px; "><img src="https://i.imgur.com/s7qhnfH.png" style="width:25px; height:25px"> LV.BET2</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -60,7 +62,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="rejestracja.jsp" style="color:#fff200">REJESTRACJA</a>
                         </li>
-                        
+
 
                     </ul>
                 </div>
@@ -70,27 +72,58 @@
 
         <!-- Carousel ================================================== -->
 
-
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                
-            </ul>
-            <div class="carousel-inner">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="https://i.imgur.com/UHR9CdL.png" alt="Los Angeles" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3>BONUS</h3>
+                    <img class="d-block img-fluid" src="https://i.imgur.com/afPgOgd.png" alt="1">
+                    <div class="carousel-caption"> 
+                        <h3 style="font-family: 'Audiowide';">BONUS NA START</h3>
                         <p>Odbierz bonus przy pierwszej rejestracji!</p>
-                    </div>   
+                        <a href="rejestracja.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >REJESTRACJA</a>
+                    </div>
                 </div>
-                
+
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="https://i.imgur.com/rmh6zfb.png" alt="2">
+                    <div class="carousel-caption"> 
+                        <h3 style="font-family: 'Audiowide';">KOSZYKARSKI BONUS</h3>
+                        <p>Koszykarski bonus co tydzień!</p>
+                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WIĘCEJ</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="https://i.imgur.com/Z2b9l2e.png" alt="3">
+                    <div class="carousel-caption"> 
+                        <h3 style="font-family: 'Audiowide';">SPORTY WIRTUALNE</h3>
+                        <p>Graj całą dobę!</p>
+                        <a href="sportyWirt.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WIĘCEJ</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="https://i.imgur.com/ANjX7O1.png" alt="3">
+                    <div class="carousel-caption"> 
+                        <h3 style="font-family: 'Audiowide';">RANKING SPECJALNY</h3>
+                        <p>Wygraj bilety na mecze reprezentacji!</p>
+                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WIĘCEJ</a>
+                    </div>
+                </div>
+
             </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
         </div>
 
@@ -103,47 +136,43 @@
 
 
         <!-- Page Content -->
-        <div class="w-90 p-2">
+       <div class="w-90 p-5" >
 
             <div class="row">
 
-                <div class="col-lg-3">
+                   <div class="col-lg-2">
                     <!--   <h1 class="my-4"  >SPORTY</h1> -->
-                    <div class="list-group">
+                <div class="list-group">
                         <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">SPORTY</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PIŁKA NOŻNA</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PIŁKA RĘCZNA</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">KOSZYKÓWKA</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">HOKEJ</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">TENNIS</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SIATKÓWKA</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">BASEBALL</a>
-             
+                        <a href="pilkanozna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PIŁKA NOŻNA</a>
+                        <a href="pilkareczna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PIŁKA RĘCZNA</a>
+                        <a href="koszykowka.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">KOSZYKÓWKA</a>
+                        <a href="hokej.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">HOKEJ</a>
+                        <a href="tennis.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">TENNIS</a>
+                        <a href="baseball.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">BASEBALL</a>
+
                     </div>
-                <br>
-                     <div class="list-group">
+                    <br>
+                    <div class="list-group">
                         <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAGŁÓWEK 2</a>
                         <a href="pomoc.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">POMOC</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">REGULAMIN</a>
+                        <a href="regulamin.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">REGULAMIN</a>
                         <a href="promocje.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PROMOCJE</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">STATYSTYKI</a>
-               </div>
-                    <br>
-                      <div class="list-group">
-                       <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAGŁÓWEK 3</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SPRAWDŹ ZAKŁAD</a>
-                        <a href="#" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">WYNIKI</a>
-                      
+                        <a href="statystyki.jps" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">STATYSTYKI</a>
                     </div>
-                    
-                    
-                    
+                    <br>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAGŁÓWEK 3</a>
+                        <a href="sprzaklad.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SPRAWDŹ ZAKŁAD</a>
+                        <a href="wyiki.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">WYNIKI</a>
+
+                    </div>
                 </div>
                 <!-- /.col-lg-3 -->
 
                 <div class="col-lg-9">
-                      <h3 style="color:#fff200; font-weight:bold" >PŁATNOŚCI</h3>
-               <p style="color: white"> treść</p>
+                    <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold"> PŁATNOŚCI</h3>
+                    <p style="color: white"> treść</p>
 
                 </div>
                 <!-- /.col-lg-9 -->
@@ -156,7 +185,7 @@
 
 
 
-<br><br>
+        <br><br>
 
 
         <!-- Bootstrap core JavaScript
@@ -168,7 +197,7 @@
         <!-- Footer -->
         <footer class="py-5 bg-dark">
             <div class="container">
-                <p class="m-0 text-center text-white" style="color:#fff200">Copyright &copy; BUKMACHER 2018</p>
+                 <p class="m-0 text-center text-white" style="color:#fff200">Copyright &copy; <img src="https://i.imgur.com/s7qhnfH.png" style="width:20px; height:20px"> <text style="color:#fff200; font-family: 'Audiowide'; font-size: 15px; ">LV.BET2  2018</p>
             </div>
             <!-- /.container -->
         </footer>
