@@ -11,7 +11,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-        <title>pomoc</title>
+        
+        <title>piłka nożna</title>
         <link rel="shortcut icon" href="https://i.imgur.com/7pcghN2.png"/>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -21,6 +22,17 @@
             .carousel-inner img {
                 width: 100%;
                 height: 100%;
+            }
+            
+               .btn-2 {
+               background-color: red;
+               color: white; 
+               font-weight: bold;
+               font-size:20px;
+               float: center; 
+               text-align: center;
+               height: 60px; 
+               width: 150px;
             }
         </style>
 
@@ -78,9 +90,20 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
+                
+                 <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="https://i.imgur.com/tp3oTPN.jpg" alt="1">
+                    <div class="carousel-caption"> 
+                        <h3 style="font-family: 'Audiowide';"><img src="https://i.imgur.com/s7qhnfH.png" style="width:30px; height:30px"> PIŁKA NOŻNA</h3>
+
+                        <a href="#" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >ZDARZENIA</a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
                     <img class="d-block img-fluid" src="https://i.imgur.com/afPgOgd.png" alt="1">
                     <div class="carousel-caption"> 
                         <h3 style="font-family: 'Audiowide';">BONUS NA START</h3>
@@ -126,17 +149,10 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
-
-
-
-
-
-
+       
 
         <!-- Page Content -->
-          <div class="w-90 p-5" >
+        <div class="w-90 p-5" >
 
             <div class="row">
 
@@ -168,88 +184,91 @@
 
                     </div>
                 </div>
+                
+                
                 <!-- /.col-lg-3 -->
 
-                
-            
-
-                 <div class="col-lg-5">
-               
-
-                    <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold"> JAK MOŻEMY POMÓC?</h3>
-
-                    <p style="color:white"> Odkąd sami po raz pierwszy wnieśliśmy zakład sportowy, wiemy, że tylko jasne zasady, dobra atmosfera
-                        <br>i bezpieczeństwo gwarantują dobrą zabawę i niezapomniane emocje.</p>
-
-                    <p style="color:white"> W Lv.bet2 zadowolenie Graczy jest dla nas priorytetem, a każdą sprawą zajmujemy się profesjonalnie <br> 
-                        i indywidualnie. Nasz doświadczony i w pełni wykwalifikowany zespół jest zawsze gotowy by służyć Ci pomocą.</P>
-
-                    <p style="color:white"> Jeśli zatem masz pytanie, potrzebujesz porady albo masz dla nas jakąś sugestię, wybierz jedną z najwygodniejszych dla Ciebie opcji: formularz kontaktowy lub e-mail.</P>
-
-                    <p style="color:white"> Nasi Eksperci z przyjemnością odpowiedzą na każdy czat oraz email codziennie w godzinach 8:00-23:00 pod adresem <a href="pomoc@lv.bet2.com" style="color:#fff200; font-weight: bold">pomoc@lv.bet2.com</a></p>
-
-                    <p style="color:white">Wierzymy, że zakłady sportowe sprawiają przyjemność i dostarczają rozrywki ale pamiętaj żeby grać odpowiedzialnie!</p>
-</div>
- 
-
-                 <div class="col-lg-4">
-                    <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold">FORMULARZ KONTAKTOWY</h3>
-                    <div class="col-md-3">
-
-                        <form id="contactUsForm" class="form-main" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" novalidate="novalidate">
-                            <fieldset>
-
-                                <div class="control-group">
-                                    <label  class="control-label" for="contact_temat" style="color: white" >TEMAT <abbr title="required">*</abbr></label>
-                                    <div class="controls">
-                                        <input id="contact_first_name" name="temat" type="text" placeholder="TEMAT" class="input-xlarge required" aria-required="true">
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <label  class="control-label" for="contact_first_name" style="color: white">IMIĘ <abbr title="required">*</abbr></label>
-                                    <div class="controls">
-                                        <input id="contact_first_name" name="first_name" type="text" placeholder="IMIĘ" class="input-xlarge required" aria-required="true">
-                                    </div>
+                 <div class="col-lg-2">
 
 
-                                </div>
-
-                                <div class="control-group"> <label  class="control-label" for="contact_last_name" style="color: white">NAZWISKO <abbr title="required">*</abbr></label>
-                                    <div class="controls">
-                                        <input id="contact_first_name" name="last_name" type="text" placeholder="NAZWISKO" class="input-xlarge required" aria-required="true">
-                                    </div>
-                                </div>
-
-
-
-
-
-                                <div class="control-group">
-                                    <label class="control-label" for="contact_email" style="color: white">E-MAIL <abbr title="required">*</abbr></label>
-                                    <div class="controls">
-                                        <input id="contact_email" name="email" type="text" placeholder="E-MAIL" class="input-xlarge required email" aria-required="true">
-
-                                    </div>
-                                </div>
-
-
-                                <div class="control-group">
-                                    <label class="control-label" for="contact_message" style="color: white">WIADOMOŚĆ <abbr title="required">*</abbr></label>
-                                    <div class="controls">
-                                        <textarea id="contact_message" name="00Nb0000009NMvh" rows="3" type="text" wrap="soft" placeholder="TREŚĆ" class="input-xlarge required" aria-required="true"></textarea>
-                                        <p style="color: white">* POLA WYMAGANE</p>
-                                    </div>
-                                </div>
-
-                                <div class="actions">
-                                    <button type="submit" value="Login" class="btn btn-primary" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; ">WYŚLIJ</button>
-                                </div>
-                            </fieldset>
-                        </form>
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                        <img class="card-img-top img-fluid" src="https://i.imgur.com/shQtpdB.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: bold">POLSKA</h3>
+                            <a href="#" style="color: red; font-weight: bold; " >ZDARZENIA: 1234</a>
+                        </div>
                     </div>
 
-                    <!-- /.card -->
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                        <img class="card-img-top img-fluid" src="https://i.imgur.com/shQtpdB.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: bold">POLSKA</h3>
+                            <a href="#" style="color: red; font-weight: bold; " >ZDARZENIA: 1234</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                  <div class="col-lg-2">
+
+
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                        <img class="card-img-top img-fluid" src="https://i.imgur.com/shQtpdB.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: bold">POLSKA</h3>
+                            <a href="#" style="color: red; font-weight: bold; " >ZDARZENIA: 1234</a>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                        <img class="card-img-top img-fluid" src="https://i.imgur.com/shQtpdB.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: bold">POLSKA</h3>
+                            <a href="#" style="color: red; font-weight: bold; " >ZDARZENIA: 1234</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-2">
+
+
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                        <img class="card-img-top img-fluid" src="https://i.imgur.com/shQtpdB.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: bold">POLSKA</h3>
+                            <a href="#" style="color: red; font-weight: bold; " >ZDARZENIA: 1234</a>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                        <img class="card-img-top img-fluid" src="https://i.imgur.com/shQtpdB.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: bold">POLSKA</h3>
+                            <a href="#" style="color: red; font-weight: bold; " >ZDARZENIA: 1234</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-2">
+
+
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                        <img class="card-img-top img-fluid" src="https://i.imgur.com/shQtpdB.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: bold">POLSKA</h3>
+                            <a href="#" style="color: red; font-weight: bold; " >ZDARZENIA: 1234</a>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                        <img class="card-img-top img-fluid" src="https://i.imgur.com/shQtpdB.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: bold">POLSKA</h3>
+                            <a href="#" style="color: red; font-weight: bold; " >ZDARZENIA: 1234</a>
+                        </div>
+                    </div>
 
                 </div>
                 <!-- /.col-lg-9 -->
@@ -266,15 +285,21 @@
 
 
         <!-- Bootstrap core JavaScript
-         ================================================== -->
+        ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
         <!-- Footer -->
         <footer class="py-5 bg-dark">
             <div class="container">
-                 <p class="m-0 text-center text-white" style="color:#fff200">Copyright &copy; <img src="https://i.imgur.com/s7qhnfH.png" style="width:20px; height:20px"> <text style="color:#fff200; font-family: 'Audiowide'; font-size: 15px; ">LV.BET2  2018</p>
+                <p class="m-0 text-center text-white" style="color:#fff200">Copyright &copy; <img src="https://i.imgur.com/s7qhnfH.png" style="width:20px; height:20px"> <text style="color:#fff200; font-family: 'Audiowide'; font-size: 15px; ">LV.BET2  2018</p>
             </div>
             <!-- /.container -->
         </footer>
