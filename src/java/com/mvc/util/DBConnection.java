@@ -8,9 +8,9 @@ public class DBConnection {
 
     public static Connection createConnection() {
         Connection con = null;
-        String url = "jdbc:postgresql://localhost:5432/buk"; //MySQL URL followed by the database name
-        String username = "admin"; //MySQL username
-        String password = "admin"; //MySQL password
+        String url = "jdbc:postgresql://sigma.pwsz.krosno.pl:5432/buk"; //MySQL URL followed by the database name
+        String username = "postgres"; //MySQL username
+        String password = "26!D$196eF85"; //MySQL password
         try {
             try {
                 Class.forName("org.postgresql.Driver"); //loading MySQL drivers. This differs for database servers 
