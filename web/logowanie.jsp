@@ -4,7 +4,7 @@
     Author     : Edyta
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,16 +42,16 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="zakladyBuk.jsp">ZAKŁADY BUKMACHERSKIE</a>
+                            <a class="nav-link" href="zakladyBuk.jsp">ZAK?ADY BUKMACHERSKIE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="zaklZyw.jsp">ZAKŁADY NA ŻYWO</a>
+                            <a class="nav-link" href="zaklZyw.jsp">ZAK?ADY NA ?YWO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sportyWirt.jsp">SPORTY WIRTUALNE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="platnosci.jsp">PŁATNOŚCI</a>
+                            <a class="nav-link" href="platnosci.jsp">P?ATNO?CI</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="onas.jsp">O NAS</a>
@@ -93,8 +93,8 @@
                     <img class="d-block img-fluid" src="https://i.imgur.com/rmh6zfb.png" alt="2">
                     <div class="carousel-caption"> 
                         <h3 style="font-family: 'Audiowide';">KOSZYKARSKI BONUS</h3>
-                        <p>Koszykarski bonus co tydzień!</p>
-                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WIĘCEJ</a>
+                        <p>Koszykarski bonus co tydzie?!</p>
+                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI?CEJ</a>
                     </div>
                 </div>
 
@@ -102,8 +102,8 @@
                     <img class="d-block img-fluid" src="https://i.imgur.com/Z2b9l2e.png" alt="3">
                     <div class="carousel-caption"> 
                         <h3 style="font-family: 'Audiowide';">SPORTY WIRTUALNE</h3>
-                        <p>Graj całą dobę!</p>
-                        <a href="sportyWirt.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WIĘCEJ</a>
+                        <p>Graj ca?? dob?!</p>
+                        <a href="sportyWirt.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI?CEJ</a>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
                     <div class="carousel-caption"> 
                         <h3 style="font-family: 'Audiowide';">RANKING SPECJALNY</h3>
                         <p>Wygraj bilety na mecze reprezentacji!</p>
-                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WIĘCEJ</a>
+                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI?CEJ</a>
                     </div>
                 </div>
 
@@ -135,17 +135,17 @@
 
 
         <!-- Page Content -->
-          <div class="w-90 p-5" >
+        <div class="w-90 p-5" >
 
             <div class="row">
 
-             <div class="col-lg-2">
+                <div class="col-lg-2">
                     <!--   <h1 class="my-4"  >SPORTY</h1> -->
-                <div class="list-group">
+                    <div class="list-group">
                         <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">SPORTY</a>
-                        <a href="pilkanozna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PIŁKA NOŻNA</a>
-                        <a href="pilkareczna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PIŁKA RĘCZNA</a>
-                        <a href="koszykowka.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">KOSZYKÓWKA</a>
+                        <a href="pilkanozna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PI?KA NO?NA</a>
+                        <a href="pilkareczna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PI?KA R?CZNA</a>
+                        <a href="koszykowka.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">KOSZYK�WKA</a>
                         <a href="hokej.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">HOKEJ</a>
                         <a href="tennis.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">TENNIS</a>
                         <a href="baseball.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">BASEBALL</a>
@@ -153,7 +153,7 @@
                     </div>
                     <br>
                     <div class="list-group">
-                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAGŁÓWEK 2</a>
+                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG?�WEK 2</a>
                         <a href="pomoc.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">POMOC</a>
                         <a href="regulamin.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">REGULAMIN</a>
                         <a href="promocje.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PROMOCJE</a>
@@ -161,38 +161,37 @@
                     </div>
                     <br>
                     <div class="list-group">
-                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAGŁÓWEK 3</a>
-                        <a href="sprzaklad.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SPRAWDŹ ZAKŁAD</a>
+                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG?�WEK 3</a>
+                        <a href="sprzaklad.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SPRAWD? ZAK?AD</a>
                         <a href="wyiki.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">WYNIKI</a>
 
                     </div>
                 </div>
-                
-                
+
+
                 <!-- /.col-lg-3 -->
 
                 <div class="col-lg-9">
 
                     <div>
-                        <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold">ZALOGUJ SIĘ</h3>
-                        <form name="sentMessage" method="post" action="login" id="contactForm" novalidate>
+                        <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold">ZALOGUJ SI?</h3>
+                        <form name="form" action="<%=request.getContextPath()%>/LoginServlet" method="post">                            
+                            
                             <div class="control-group form-group">
                                 <div class="controls">
-
-                                    <label style="color:white"> LOGIN</label>
-                                    <input type="text" name="email" class="form-control" id="login" required data-validation-required-message="Podaj login lub e-mail." style="width: 300px;">
-                                    <span style="color:red"><%=(request.getAttribute("errMessageEmail") == null) ? "" : request.getAttribute("errMessageEmail")%></span>
+                                    <label style="color: white">Login</label>
+                                    <input type="text" name="username" class="form-control" style="width: 300px;" >
                                 </div>
                             </div>
                             <div class="control-group form-group">
                                 <div class="controls">
-                                    <label style="color: white">HASŁO</label>
-                                    <input type="password" name="haslo" class="form-control" id="password" required data-validation-required-message="Podaj login lub e-mail." style="width: 300px;" >
-                                    <span style="color:red"><%=(request.getAttribute("errMessageHaslo") == null) ? "" : request.getAttribute("errMessageHaslo")%></span>
+                                    <label style="color: white">HAS?O</label>
+                                    <input type="password" name="password" class="form-control" >
                                 </div>
                             </div>
 
                             <div id="success"></div>
+                            <span style="color:red"><%=(request.getAttribute("errMessage") == null) ? "" : request.getAttribute("errMessage")%></span>
                             <!-- For success/fail messages -->
                             <button type="submit" value="Login" class="btn btn-primary" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; ">ZALOGUJ</button>
 
@@ -200,7 +199,7 @@
                         <br>
                         <span style="color:red"><%=(request.getAttribute("errMessageLogowanie") == null) ? "" : request.getAttribute("errMessageLogowanie")%></span>
                     </div>
-                    <p style="color: white">ZAREJESTRUJ SIĘ I ODBIERZ BONUS! <a href="rejestracja.jsp" style="color:#fff200; font-weight: bold"> REJESTRACJA</a>
+                    <p style="color: white">ZAREJESTRUJ SI? I ODBIERZ BONUS! <a href="rejestracja.jsp" style="color:#fff200; font-weight: bold"> REJESTRACJA</a>
                         <!-- /.card -->
 
                 </div>
@@ -226,7 +225,7 @@
         <!-- Footer -->
         <footer class="py-5 bg-dark">
             <div class="container">
-                  <p class="m-0 text-center text-white" style="color:#fff200">Copyright &copy; <img src="https://i.imgur.com/s7qhnfH.png" style="width:20px; height:20px"> <text style="color:#fff200; font-family: 'Audiowide'; font-size: 15px; ">LV.BET2  2018</p>
+                <p class="m-0 text-center text-white" style="color:#fff200">Copyright &copy; <img src="https://i.imgur.com/s7qhnfH.png" style="width:20px; height:20px"> <text style="color:#fff200; font-family: 'Audiowide'; font-size: 15px; ">LV.BET2  2018</p>
             </div>
             <!-- /.container -->
         </footer>
