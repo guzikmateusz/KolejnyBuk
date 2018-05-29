@@ -4,14 +4,15 @@
     Author     : Edyta
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-        <title>strona g艂贸wna</title>
+        <title>strona g?體na</title>
         <link rel="shortcut icon" href="https://i.imgur.com/7pcghN2.png"/>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -22,16 +23,16 @@
                 width: 100%;
                 height: 100%;
             }
-            
-               .btn-2 {
-               background-color: red;
-               color: white; 
-               font-weight: bold;
-               font-size:20px;
-               float: center; 
-               text-align: center;
-               height: 60px; 
-               width: 150px;
+
+            .btn-2 {
+                background-color: red;
+                color: white; 
+                font-weight: bold;
+                font-size:20px;
+                float: center; 
+                text-align: center;
+                height: 60px; 
+                width: 150px;
             }
         </style>
 
@@ -53,16 +54,16 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="zakladyBuk.jsp">ZAK艁ADY BUKMACHERSKIE</a>
+                            <a class="nav-link" href="zakladyBuk.jsp">ZAK?ADY BUKMACHERSKIE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="zaklZyw.jsp">ZAK艁ADY NA 呕YWO</a>
+                            <a class="nav-link" href="zaklZyw.jsp">ZAK?ADY NA ?YWO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sportyWirt.jsp">SPORTY WIRTUALNE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="platnosci.jsp">P艁ATNO艢CI</a>
+                            <a class="nav-link" href="platnosci.jsp">P?ATNO?CI</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="onas.jsp">O NAS</a>
@@ -73,6 +74,23 @@
                         <li class="nav-item">
                             <a class="nav-link" href="rejestracja.jsp" style="color:#fff200">REJESTRACJA</a>
                         </li>
+                        <c:if test = "${pageContext.session.getAttribute(pageContext.request.getAttribute('userName')) eq 'Player'}">
+                            <li class="nav-item">
+                                <a class="nav-link" href="panelGracz.jsp" style="color:#fff200">Witaj "${pageContext.request.getAttribute("userName")}"</a>
+                            </li>                       
+                        </c:if>
+                            <c:if test = "${pageContext.session.getAttribute(pageContext.request.getAttribute('userName')) eq 'Editor'}">
+                            <li class="nav-item">
+                                <a class="nav-link" href="panelEdytor.jsp" style="color:#fff200">Witaj "${pageContext.request.getAttribute("userName")}"</a>
+                            </li>                       
+                        </c:if>
+                            <c:if test = "${pageContext.session.getAttribute(pageContext.request.getAttribute('userName')) eq 'Admin'}">
+                            <li class="nav-item">
+                                <a class="nav-link" href="panelAdmin.jsp" style="color:#fff200">Witaj "${pageContext.request.getAttribute("userName")}"</a>
+                            </li>                       
+                        </c:if>
+                        
+                        
 
 
                     </ul>
@@ -104,8 +122,8 @@
                     <img class="d-block img-fluid" src="https://i.imgur.com/rmh6zfb.png" alt="2">
                     <div class="carousel-caption"> 
                         <h3 style="font-family: 'Audiowide';">KOSZYKARSKI BONUS</h3>
-                        <p>Koszykarski bonus co tydzie艅!</p>
-                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI臉CEJ</a>
+                        <p>Koszykarski bonus co tydzie?!</p>
+                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI?CEJ</a>
                     </div>
                 </div>
 
@@ -113,8 +131,8 @@
                     <img class="d-block img-fluid" src="https://i.imgur.com/Z2b9l2e.png" alt="3">
                     <div class="carousel-caption"> 
                         <h3 style="font-family: 'Audiowide';">SPORTY WIRTUALNE</h3>
-                        <p>Graj ca艂膮 dob臋!</p>
-                        <a href="sportyWirt.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI臉CEJ</a>
+                        <p>Graj ca?? dob?!</p>
+                        <a href="sportyWirt.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI?CEJ</a>
                     </div>
                 </div>
 
@@ -123,7 +141,7 @@
                     <div class="carousel-caption"> 
                         <h3 style="font-family: 'Audiowide';">RANKING SPECJALNY</h3>
                         <p>Wygraj bilety na mecze reprezentacji!</p>
-                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI臉CEJ</a>
+                        <a href="promocje.jsp" class="btn" style="background-color: #fff200; color:black; font-weight: bold; height: 40px; width: 150px; " >WI?CEJ</a>
                     </div>
                 </div>
 
@@ -137,20 +155,20 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-       
+
 
         <!-- Page Content -->
         <div class="w-90 p-5" >
 
             <div class="row">
 
-                 <div class="col-lg-2">
+                <div class="col-lg-2">
                     <!--   <h1 class="my-4"  >SPORTY</h1> -->
-                <div class="list-group">
+                    <div class="list-group">
                         <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">SPORTY</a>
-                        <a href="pilkanozna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PI艁KA NO呕NA</a>
-                        <a href="pilkareczna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PI艁KA R臉CZNA</a>
-                        <a href="koszykowka.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">KOSZYK脫WKA</a>
+                        <a href="pilkanozna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PI?KA NO?NA</a>
+                        <a href="pilkareczna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PI?KA R?CZNA</a>
+                        <a href="koszykowka.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">KOSZYK覹KA</a>
                         <a href="hokej.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">HOKEJ</a>
                         <a href="tennis.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">TENNIS</a>
                         <a href="baseball.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">BASEBALL</a>
@@ -158,7 +176,7 @@
                     </div>
                     <br>
                     <div class="list-group">
-                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG艁脫WEK 2</a>
+                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG?覹EK 2</a>
                         <a href="pomoc.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">POMOC</a>
                         <a href="regulamin.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">REGULAMIN</a>
                         <a href="promocje.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PROMOCJE</a>
@@ -166,27 +184,27 @@
                     </div>
                     <br>
                     <div class="list-group">
-                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG艁脫WEK 3</a>
-                        <a href="sprzaklad.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SPRAWD殴 ZAK艁AD</a>
+                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG?覹EK 3</a>
+                        <a href="sprzaklad.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SPRAWD? ZAK?AD</a>
                         <a href="wyiki.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">WYNIKI</a>
 
                     </div>
                 </div>
-                
-                
+
+
                 <!-- /.col-lg-3 -->
 
-    <div class="col-lg-3">
-                    <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold" >STRONA G艁脫WNA</h3>
+                <div class="col-lg-3">
+                    <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold" >STRONA G?覹NA</h3>
 
-                        <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
+                    <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
                         <img class="card-img-top img-fluid" src="https://i.imgur.com/afPgOgd.png" alt="">
                         <div class="card-body">
-                        <h3 class="card-title" style="font-weight: bold">BONUS POWITALNY 1000 PLN!</h3>
-                        <p class="card-text">Zarejestruj si臋 i dokonaj depozytu minimum 50 PLN wybieraj膮c bonus z mno偶nikiem. Odbierz r贸wnowarto艣膰 nawet 1000 PLN!</p>
-                        <a href="rejestracja.jsp" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px; " >REJESTRACJA</a>
+                            <h3 class="card-title" style="font-weight: bold">BONUS POWITALNY 1000 PLN!</h3>
+                            <p class="card-text">Zarejestruj si? i dokonaj depozytu minimum 50 PLN wybieraj?c bonus z mno?nikiem. Odbierz r體nowarto?? nawet 1000 PLN!</p>
+                            <a href="rejestracja.jsp" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px; " >REJESTRACJA</a>
                         </div>
-                        </div>
+                    </div>
                     <!-- /.card -->
 
                     <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
@@ -194,30 +212,30 @@
                         <div class="card-body">
                             <h3 class="card-title" style="font-weight: bold">SPORTY WIRTUALNE</h3>
 
-                            <p class="card-text">Wirtualne sporty inspirowane s膮 prawdziwymi sportami i przedstawiaj膮 komputerowo, losowo generowane wyniki, przetwarzane w animacj臋. Wyniki generowane w przypadku sport贸w wirtualnych oparte s膮 na statystykach zespo艂贸w/graczy oraz liczbach wybranych przez generator liczb losowych. Ogromna ilo艣膰 zdarze艅, dynamika, kr贸tki czas zamkni臋cia zdarzenia jak r贸wnie偶 rozliczenia zak艂adu to g艂贸wne atuty sport贸w wirtualnych. Wielkie emocje gwarantowane!</p>
-                           <a href="#" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px;">GRAJ!</a>
+                            <p class="card-text">Wirtualne sporty inspirowane s? prawdziwymi sportami i przedstawiaj? komputerowo, losowo generowane wyniki, przetwarzane w animacj?. Wyniki generowane w przypadku sport體 wirtualnych oparte s? na statystykach zespo?體/graczy oraz liczbach wybranych przez generator liczb losowych. Ogromna ilo?? zdarze?, dynamika, kr髏ki czas zamkni?cia zdarzenia jak r體nie? rozliczenia zak?adu to g?體ne atuty sport體 wirtualnych. Wielkie emocje gwarantowane!</p>
+                            <a href="#" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px;">GRAJ!</a>
                         </div>
                     </div>
-        </div>
-        <div class="col-lg-3">
+                </div>
+                <div class="col-lg-3">
                     <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
                         <img class="card-img-top img-fluid" src="https://i.imgur.com/aUNhrzI.jpg" alt="">
                         <div class="card-body">
-                            <h3 class="card-title" style="font-weight: bold">TYTU艁</h3>
+                            <h3 class="card-title" style="font-weight: bold">TYTU?</h3>
 
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
-                            <a href="#" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px;">WI臉CEJ</a>
+                            <a href="#" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px;">WI?CEJ</a>
                         </div>
                     </div>
-        </div>
-<div class="col-lg-3">
+                </div>
+                <div class="col-lg-3">
                     <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
                         <img class="card-img-top img-fluid" src="https://i.imgur.com/UHR9CdL.png" alt="">
                         <div class="card-body">
-                            <h3 class="card-title" style="font-weight: bold">TYTU艁</h3>
+                            <h3 class="card-title" style="font-weight: bold">TYTU?</h3>
 
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
-                            <a href="#" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px;">WI臉CEJ</a>
+                            <a href="#" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px;">WI?CEJ</a>
                         </div>
                     </div>
                     <!-- /.card -->
