@@ -4,7 +4,7 @@
     Author     : Edyta
 --%>
 
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html;" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-        <title>strona g?ówna</title>
+        <title>strona g?ï¿½wna</title>
         <link rel="shortcut icon" href="https://i.imgur.com/7pcghN2.png"/>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -168,7 +168,7 @@
                         <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">SPORTY</a>
                         <a href="pilkanozna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PI?KA NO?NA</a>
                         <a href="pilkareczna.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PI?KA R?CZNA</a>
-                        <a href="koszykowka.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">KOSZYKÓWKA</a>
+                        <a href="koszykowka.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">KOSZYKï¿½WKA</a>
                         <a href="hokej.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">HOKEJ</a>
                         <a href="tennis.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">TENNIS</a>
                         <a href="baseball.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">BASEBALL</a>
@@ -176,7 +176,7 @@
                     </div>
                     <br>
                     <div class="list-group">
-                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG?ÓWEK 2</a>
+                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG?ï¿½WEK 2</a>
                         <a href="pomoc.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">POMOC</a>
                         <a href="regulamin.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">REGULAMIN</a>
                         <a href="promocje.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">PROMOCJE</a>
@@ -184,7 +184,7 @@
                     </div>
                     <br>
                     <div class="list-group">
-                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG?ÓWEK 3</a>
+                        <a href="#" class="list-group-item active" style="font-weight: bold; background-color: #fff200; color:#343a40; font-size: 20px; border-color:#fff200;">NAG?ï¿½WEK 3</a>
                         <a href="sprzaklad.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">SPRAWD? ZAK?AD</a>
                         <a href="wyiki.jsp" class="list-group-item" style="background-color: #343a40; color:#fff200; border-color:#343a40;">WYNIKI</a>
 
@@ -195,13 +195,13 @@
                 <!-- /.col-lg-3 -->
 
                 <div class="col-lg-3">
-                    <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold" >STRONA G?ÓWNA</h3>
+                    <h3 style="font-family: 'Audiowide'; color:#fff200; font-weight:bold" >STRONA G?ï¿½WNA</h3>
 
                     <div class="card mt-4" style="background-color: #fff200; color:#343a40; border-color:#fff200;">
                         <img class="card-img-top img-fluid" src="https://i.imgur.com/afPgOgd.png" alt="">
                         <div class="card-body">
                             <h3 class="card-title" style="font-weight: bold">BONUS POWITALNY 1000 PLN!</h3>
-                            <p class="card-text">Zarejestruj si? i dokonaj depozytu minimum 50 PLN wybieraj?c bonus z mno?nikiem. Odbierz równowarto?? nawet 1000 PLN!</p>
+                            <p class="card-text">Zarejestruj si? i dokonaj depozytu minimum 50 PLN wybieraj?c bonus z mno?nikiem. Odbierz rï¿½wnowarto?? nawet 1000 PLN!</p>
                             <a href="rejestracja.jsp" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px; " >REJESTRACJA</a>
                         </div>
                     </div>
@@ -212,7 +212,7 @@
                         <div class="card-body">
                             <h3 class="card-title" style="font-weight: bold">SPORTY WIRTUALNE</h3>
 
-                            <p class="card-text">Wirtualne sporty inspirowane s? prawdziwymi sportami i przedstawiaj? komputerowo, losowo generowane wyniki, przetwarzane w animacj?. Wyniki generowane w przypadku sportów wirtualnych oparte s? na statystykach zespo?ów/graczy oraz liczbach wybranych przez generator liczb losowych. Ogromna ilo?? zdarze?, dynamika, krótki czas zamkni?cia zdarzenia jak równie? rozliczenia zak?adu to g?ówne atuty sportów wirtualnych. Wielkie emocje gwarantowane!</p>
+                            <p class="card-text">Wirtualne sporty inspirowane s? prawdziwymi sportami i przedstawiaj? komputerowo, losowo generowane wyniki, przetwarzane w animacj?. Wyniki generowane w przypadku sportï¿½w wirtualnych oparte s? na statystykach zespo?ï¿½w/graczy oraz liczbach wybranych przez generator liczb losowych. Ogromna ilo?? zdarze?, dynamika, krï¿½tki czas zamkni?cia zdarzenia jak rï¿½wnie? rozliczenia zak?adu to g?ï¿½wne atuty sportï¿½w wirtualnych. Wielkie emocje gwarantowane!</p>
                             <a href="#" class="btn" style="background-color: red; color:white; font-weight: bold; height: 40px; width: 150px;">GRAJ!</a>
                         </div>
                     </div>
