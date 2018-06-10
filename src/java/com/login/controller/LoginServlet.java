@@ -28,13 +28,15 @@ public class LoginServlet extends HttpServlet {
             if (userValidate.equals("Admin_Role")) {
                 System.out.println("Admin's Home");
                 HttpSession session = request.getSession(); //Creating a session
-                session.setAttribute("Admin", userName); //setting session attribute
+                session.setMaxInactiveInterval(10 * 60);
+                session.setAttribute(userName, "Admin");
                 request.setAttribute("userName", userName);
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
             } else if (userValidate.equals("Editor_Role")) {
                 System.out.println("Editor's Home");
                 HttpSession session = request.getSession();
-                session.setAttribute("Editor", userName);
+                session.setMaxInactiveInterval(10 * 60);
+                session.setAttribute(userName, "Editor");
                 request.setAttribute("userName", userName);
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
             } else if (userValidate.equals("User_Role")) {
