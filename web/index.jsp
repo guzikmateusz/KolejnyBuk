@@ -79,12 +79,12 @@
                                 <a class="nav-link" href="panelGracz.jsp" style="color:#fff200">Witaj "${pageContext.request.getAttribute("userName")}"</a>
                             </li>                       
                         </c:if>
-                            <c:if test = "${pageContext.session.getAttribute(pageContext.request.getAttribute('userName')) eq 'Editor'}">
+                        <c:if test = "${pageContext.session.getAttribute(pageContext.request.getAttribute('userName')) eq 'Editor'}">
                             <li class="nav-item">
                                 <a class="nav-link" href="panelEdytor.jsp" style="color:#fff200">Witaj "${pageContext.request.getAttribute("userName")}"</a>
                             </li>                       
                         </c:if>
-                            <c:if test = "${pageContext.session.getAttribute(pageContext.request.getAttribute('userName')) eq 'Admin'}">
+                        <c:if test = "${pageContext.session.getAttribute(pageContext.request.getAttribute('userName')) eq 'Admin'}">
                             <li class="nav-item">
                                 <a class="nav-link" href="panelAdmin.jsp" style="color:#fff200">Witaj "${pageContext.request.getAttribute("userName")}"</a>
                             </li>                       
